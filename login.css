@@ -1,0 +1,106 @@
+html,body{
+    margin: 0px;
+}
+
+/* align container in center */
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fbfbfb;
+}
+
+/* align items in center column */
+.card   {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 12px;
+    border-color: rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    color: #291f1f;
+    
+    /* set card scaling */
+    max-width: 600px;
+    min-width: 300px;
+    width: 33%;
+    min-height: 300px;
+    max-height: 600px;
+    height: 40%; 
+    
+    /* felxbox placement */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 0.15;
+
+    box-shadow: 0 0 20px 7px rgba(0,0,0,0.05) ;
+}
+
+/* sign in wording formatting */
+.sign-in {
+    /* set font */
+    font-family: 'Dosis', sans-serif;
+    font-size: 24px;
+}
+
+/* PASSWORD */
+/* create margin for password container */
+.password-con {
+    margin: 20px;
+}
+/* only bottom border for username/password */
+input[type=password] {
+    border: 0px;
+    border-bottom: 1px solid #291f1f;  
+}
+
+/* USERNAME */
+/* create margin for username container */
+.username-con {
+    margin: 20px;
+}
+/* eliminate top and side border of text field */
+input[submit=text] {
+    border: 0px;
+    border-bottom: 1px solid #291f1f;
+}
+
+/* SUBMIT */
+.submit-button {
+    margin: 5px;
+    margin-bottom: 40px;
+}
+
+/* format color and aspects of sign in button */
+#submit {
+    background-color: #1390de;
+    color: #fbfbfb;
+    border: 0px;
+    border-radius: 35px 35px 35px 35px;
+    /* increases button size */
+    padding: 10px;
+    margin-bottom: 5px;
+    transition: 0.5s;
+    width: 200px;
+}
+/* button changes on hover to appear raised */
+#submit:hover {
+    background-color: #1390deba;
+    color: #fbfbfb;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);    
+}
+/* button changes on click to appear pressed */
+#submit:active {
+    background-color: #1390de;
+    color: #fbfbfb;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24), 0 5px 5px 0 rgba(0,0,0,0.19);
+    transition: 0.2s;
+}
+
+/* Remove outline from username/password text field */
+input:focus {
+    outline: none;
+}
